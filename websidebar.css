@@ -1,0 +1,256 @@
+
+  
+
+/* start -- show sidebar when user click on navv Hamburger buttonn acording display size of screen ( mean mob screen only )  */
+
+.sidebarpanel
+{
+  width:245px;
+  height:100%;
+  position:fixed;
+  z-index:90000000050;
+  user-select:none;
+  scroll-behavior:smooth;
+  /*overflow-y:auto;
+  overflow-x:auto;*/
+  margin-left:-300px;
+  transition:0.1s;
+  -webkit-transition:0.1s;
+  top:0;
+  bottom:0;
+  background:rgba(255,255,256,0.8)!important;
+  box-shadow:2px 0px 4px 2px rgb(0 0 0 / 10%);
+}
+
+.sidebarscrollitem
+{
+  scroll-behavior:smooth;
+  overflow-y:auto;
+  overflow-x:auto;
+  height:220px;
+}
+
+/*.accordsidebarscrollitem
+{
+  scroll-behavior:smooth;
+  overflow-y:auto;
+  overflow-x:auto;
+  height:100px;
+}
+*/
+.sidebartophadingdiv
+{
+ /* background:rgba(255,255,256,0.26)!important;
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);*/
+   position: relative;
+   z-index:3;
+   border-bottom-left-radius:50%;
+   border-bottom-right-radius:50%;
+   box-shadow: 0px 10px 15px rgb(0 0 0 / 7%);
+}
+
+/* width */
+.sidebarscrollitem::-webkit-scrollbar {
+  width:5px;
+}
+
+/* Track */
+.sidebarscrollitem::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #aeed21;
+  background: #aeed21;  
+  border-radius:10px;
+}
+ 
+/* Handle */
+.sidebarscrollitem::-webkit-scrollbar-thumb {
+  background: white;  
+  border-radius:10px; 
+  box-shadow: inset 0 0 5px white;
+}
+
+/* Handle on hover */
+.sidebarscrollitem::-webkit-scrollbar-thumb:hover {
+  background:#50eec8; 
+  cursor: pointer;
+}
+
+
+.navSpanItem
+{
+  font-size:11px;
+  padding-left:10px; 
+  transition:1s;
+  color:gray;
+  letter-spacing:1px;
+  word-wrap:break-word;
+  word-spacing:1px;
+ line-height: 35px;
+}
+
+
+.navSpanItemlinkavailsingle
+{
+  font-size:11px;
+  padding-left:40px; 
+  transition:1s;
+  color:gray;
+  letter-spacing:1px;
+  word-spacing:1px;
+  text-decoration: none!important;
+  line-height:27px;
+}
+.navSpanItemlinkavailsingle:hover
+{
+  cursor:pointer;
+  padding-left:50px; 
+  transition:1s;
+  color:#a9ee2b;
+}
+
+.navSpanItemlinkavailsingleoutside
+{
+  color:gray;
+  text-decoration: none!important;
+}
+
+.navSpanItemlinkavailsingleoutside:hover
+{
+  cursor:pointer;
+  color:#a9ee2b;
+}
+
+.navSpanItem:hover
+{
+  cursor:pointer;
+  padding-left:30px; 
+  transition:1s;
+  color:#a9ee2b;
+}
+
+
+
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (min-width: 992px) {
+  #sidebarpanelside {
+    display:none;
+  }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (min-width: 992px) {
+  #sidebarbgblackdiv
+  {
+    display:none;
+    width:0;
+    height:0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition:1s;
+  }
+}
+
+/* end -- show sidebar when user click on navv Hamburger buttonn acording display size of screen ( mean mob screen only ) */
+
+
+
+
+
+
+
+/*  start -- sidebar see more divv display and design  */
+
+.sidebarSeeMoreClass
+{
+  position:absolute;
+  /*z-index:120000099;*/
+  bottom:0px;
+  top: 0;
+  width:240px;
+  height:100%;  
+  transition: .5s ease;
+  background-color:#addee8;
+  overflow-y:auto;
+    overflow-x:hidden;
+    margin-left:-300px;
+    transition:1s ease;
+} 
+
+/*  end -- sidebar see more divv display and design  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  start -- when sidebar is open click on Nav Hamburger buttonn then show divv of overlay black divv that 
+   are cover all document bodyy part  with black color and overlay display effect */
+
+#sidebarbgblackdiv
+{
+   position:fixed;
+   z-index:900000000;
+   width:100%
+   height:100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background:rgba(255,255,256,0.16)!important;
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+   display: none;
+   transition:1s;
+}
+
+/*
+  end -- when sidebar is open click on Nav Hamburger buttonn then show divv of overlay black divv that 
+   are cover all document bodyy part  with black color and overlay display effect */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
