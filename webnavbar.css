@@ -72,7 +72,7 @@
 #navbarTopWeb 
 {
   position:fixed;
-  z-index:9000000050;
+  z-index:900000;
   width:100%;
   top:-150px;
   transition: top 1s;
